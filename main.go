@@ -13,8 +13,8 @@ import (
 type taskData string
 
 type projectData struct {
-	ID         string     `json:"id" dt:"-"`
-	CratedAt   time.Time  `json:"created_at" db:"-"`
+	ID         string     `json:"-" dt:"-"`
+	CratedAt   time.Time  `json:"-" db:"-"`
 	Name       string     `json:"name"`
 	Name2      string     `json:"name2"`
 	Site       string     `json:"site"`
